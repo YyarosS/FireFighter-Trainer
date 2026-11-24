@@ -107,3 +107,52 @@ InitTestScene*.unity*
 
 # Auto-generated cache in Assets folder
 /[Aa]ssets/[Ss]ceneDependencyCache*
+
+# ---------------------------------------------------------------------------
+# Проектные дополнения (Firefighter-Trainer)
+# ---------------------------------------------------------------------------
+
+# --- Персональные настройки IDE ---
+.idea/
+*.iml
+.fleet/
+.vsconfig
+
+# --- Файлы ОС ---
+.DS_Store
+Thumbs.db
+desktop.ini
+*.bak
+*.orig
+
+# --- Логи сборки ---
+/[Bb]uild[Ll]ogs/
+/[Bb]in/
+*.stackdump
+
+# --- Unity Asset Store Tools (плагин редактора) ---
+/[Aa]ssets/AssetStoreTools*
+
+# --- Серверная часть на Gradle/Java ---
+# Артефакты сборки и кэш демона Gradle не нужны в репозитории;
+# gradle-wrapper.jar и gradlew — наоборот, коммитятся (см. исключение ниже).
+/Server/.gradle/
+/Server/**/build/
+/Server/**/out/
+*.class
+*.jar
+!/Server/gradle/wrapper/gradle-wrapper.jar
+
+# --- Проверка клиентского ядра без Unity (dotnet) ---
+/Tools/**/bin/
+/Tools/**/obj/
+# csproj-файл проверки — часть проекта, хотя Unity-шные *.csproj игнорируются
+!/Tools/**/*.csproj
+
+# --- Python-утилиты обслуживания ---
+__pycache__/
+*.pyc
+
+# --- Ключи подписи Android не должны попадать в репозиторий ---
+*.keystore
+*.jks

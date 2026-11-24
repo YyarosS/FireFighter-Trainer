@@ -1,0 +1,21 @@
+{
+    "name": "Firefighter.Editor",
+    "rootNamespace": "Firefighter.Editor",
+    "references": [
+        "Firefighter.Domain",
+        "Firefighter.Application",
+        "Firefighter.Infrastructure",
+        "Firefighter.Presentation"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

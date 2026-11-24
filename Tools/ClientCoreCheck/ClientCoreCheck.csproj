@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    Проверка архитектурной границы клиента.
+
+    Проект компилирует ТОЛЬКО Domain и Application — без UnityEngine.
+    Если в «чистую» логику попадёт using UnityEngine или обращение к
+    MonoBehaviour, сборка упадёт. Это независимая от Unity проверка:
+    её можно запустить в CI без установленного редактора.
+
+    Запуск:  dotnet build Tools/ClientCoreCheck/ClientCoreCheck.csproj
+  -->
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <Nullable>disable</Nullable>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <AssemblyName>Firefighter.ClientCore.Check</AssemblyName>
+    <RootNamespace>Firefighter</RootNamespace>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="../../Assets/_Project/Scripts/Domain/**/*.cs" />
+    <Compile Include="../../Assets/_Project/Scripts/Application/**/*.cs" />
+  </ItemGroup>
+
+</Project>
