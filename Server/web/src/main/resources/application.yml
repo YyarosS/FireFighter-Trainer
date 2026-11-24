@@ -1,0 +1,10 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: firefighter-server
+
+logging:
+  level:
+    ru.mirea.firefighter: INFO
