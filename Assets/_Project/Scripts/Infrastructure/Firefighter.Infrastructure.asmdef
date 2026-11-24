@@ -1,0 +1,17 @@
+{
+    "name": "Firefighter.Infrastructure",
+    "rootNamespace": "Firefighter.Infrastructure",
+    "references": [
+        "Firefighter.Domain",
+        "Firefighter.Application"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

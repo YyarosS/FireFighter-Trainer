@@ -1,0 +1,19 @@
+{
+    "name": "Firefighter.Presentation",
+    "rootNamespace": "Firefighter.Presentation",
+    "references": [
+        "Firefighter.Domain",
+        "Firefighter.Application",
+        "Firefighter.Infrastructure",
+        "Unity.TextMeshPro"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
